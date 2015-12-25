@@ -18,6 +18,81 @@
   <h1>Landfall</h1>
 </div>
 
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th></th>
+        <th>White</th>
+        <th>Blue</th>
+	    <th>Black</th>
+	    <th>Red</th>
+	    <th>Green</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>Enters untapped</td>
+	    <td id="tableEBUW">0</td>
+        <td id="tableEBUU">0</td>
+	    <td id="tableEBUB">0</td>
+	    <td id="tableEBUR">0</td>
+	    <td id="tableEBUG">0</td>
+      </tr>
+      <tr>
+        <td>Enters tapped</td>
+        <td id="tableEBTW">0</td>
+    	<td id="tableEBTU">0</td>
+	    <td id="tableEBTB">0</td>
+    	<td id="tableEBTR">0</td>
+    	<td id="tableEBTG">0</td>
+      </tr>
+      <tr>
+    	<td>Dork</td>
+        <td id="tableDorkW">0</td>
+    	<td id="tableDorkU">0</td>
+    	<td id="tableDorkB">0</td>
+    	<td id="tableDorkR">0</td>
+    	<td id="tableDorkG">0</td>
+      </tr>
+      <tr>
+	    <td>Cantrip</td>
+        <td id="tableCantripW">0</td>
+    	<td id="tableCantripU">0</td>
+    	<td id="tableCantripB">0</td>
+    	<td id="tableCantripR">0</td>
+    	<td id="tableCantripG">0</td>
+      </tr>
+      <tr>
+    	<td>Scry</td>
+        <td id="tableScryW">0</td>
+    	<td id="tableScryU">0</td>
+    	<td id="tableScryB">0</td>
+    	<td id="tableScryR">0</td>
+    	<td id="tableScryG">0</td>
+      </tr>
+      <tr>
+	    <td>Total</td>
+        <td id="tableTotalW">0</td>
+    	<td id="tableTotalU">0</td>
+    	<td id="tableTotalB">0</td>
+    	<td id="tableTotalR">0</td>
+    	<td id="tableTotalG">0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<div class="row">
+<div class="col-md-1">
+Total Lands
+</div>
+<div class="col-md=2">
+<output id="total" type="number">
+</div>
+</div>
+</div>
+
+<hr>
+
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#basicLand">Basic Lands</button>
 <div id="basicLand" class="collapse in">
 <div class="row">
@@ -166,85 +241,15 @@ BG Shock
 </div>
 </div>
 
-<hr>
-
-<div class="row">
-<div class="col-md-1">
-Total Lands
-</div>
-<div class="col-md=2">
-<output id="total" type="number">
-</div>
-</div>
-</div>
-
-<table class="table table-bordered">
-    <thead>
-      <tr>
-        <th></th>
-        <th>White</th>
-        <th>Blue</th>
-	    <th>Black</th>
-	    <th>Red</th>
-	    <th>Green</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-       <td>Enters untapped</td>
-	    <td id="tableEBUW">0</td>
-        <td id="tableEBUU">0</td>
-	    <td id="tableEBUB">0</td>
-	    <td id="tableEBUR">0</td>
-	    <td id="tableEBUG">0</td>
-      </tr>
-      <tr>
-        <td>Enters tapped</td>
-        <td id="tableEBTW">0</td>
-    	<td id="tableEBTU">0</td>
-	    <td id="tableEBTB">0</td>
-    	<td id="tableEBTR">0</td>
-    	<td id="tableEBTG">0</td>
-      </tr>
-      <tr>
-    	<td>Dork</td>
-        <td id="tableDorkW">0</td>
-    	<td id="tableDorkU">0</td>
-    	<td id="tableDorkB">0</td>
-    	<td id="tableDorkR">0</td>
-    	<td id="tableDorkG">0</td>
-      </tr>
-      <tr>
-	    <td>Cantrip</td>
-        <td id="tableCantripW">0</td>
-    	<td id="tableCantripU">0</td>
-    	<td id="tableCantripB">0</td>
-    	<td id="tableCantripR">0</td>
-    	<td id="tableCantripG">0</td>
-      </tr>
-      <tr>
-    	<td>Scry</td>
-        <td id="tableScryW">0</td>
-    	<td id="tableScryU">0</td>
-    	<td id="tableScryB">0</td>
-    	<td id="tableScryR">0</td>
-    	<td id="tableScryG">0</td>
-      </tr>
-      <tr>
-	    <td>Total</td>
-        <td id="tableTotalW">0</td>
-    	<td id="tableTotalU">0</td>
-    	<td id="tableTotalB">0</td>
-    	<td id="tableTotalR">0</td>
-    	<td id="tableTotalG">0</td>
-      </tr>
-    </tbody>
-  </table>
 
 <hr>
 
 <p>
-Work in progress.
+Work in progress.<br>
+Things to do: <br>
+-make fetches and shocks interact properly<br>
+-add other lands (pains)<br>
+-provide suggestions based on your current base
 </p>
 </body>
 </html>
