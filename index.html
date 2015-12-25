@@ -14,7 +14,13 @@
 </head>
 <body>
 
+<div class="container">
 <h1>Landfall</h1>
+
+  <!--<div class="alert alert-success" id="positiveAlert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    You have a good amount of mana in your deck.
+  </div> -->
 
 <table class="table table-bordered">
     <thead>
@@ -36,7 +42,7 @@
 	    <td id="tableEBUR">0</td>
 	    <td id="tableEBUG">0</td>
       </tr>
-      <tr>
+      <!--<tr>
         <td>Enters tapped</td>
         <td id="tableEBTW">0</td>
     	<td id="tableEBTU">0</td>
@@ -67,7 +73,7 @@
     	<td id="tableScryB">0</td>
     	<td id="tableScryR">0</td>
     	<td id="tableScryG">0</td>
-      </tr>
+      </tr>-->
       <tr>
 	    <td>Total</td>
         <td id="tableTotalW">0</td>
@@ -87,7 +93,8 @@ Total Lands
 <output id="total" type="number">
 </div>
 </div>
-</div>
+
+<!-- <button type="button" id="analyzeButton" class="btn btn-success" onclick="analyzeMana()">Analyze me</button> -->
 
 <hr>
 
@@ -96,24 +103,24 @@ Total Lands
 <div class="row">
 <div class="col-md-2">
 <p>
-Plains
-<input id="basicW" type="number" min="0" onchange="updateTable()">
+  <label for="basicW">Plains:</label>
+  <input id="basicW" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-Islands
-<input id="basicU" type="number" min="0" onchange="updateTable()">
+  <label for="basicU">Islands:</label>
+  <input id="basicU" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-Swamps
-<input id="basicB" type="number" min="0" onchange="updateTable()">
+  <label for="basicB">Swamps:</label>
+  <input id="basicB" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-Mountains
-<input id="basicR" type="number" min="0" onchange="updateTable()">
+  <label for="basicR">Mountains:</label>
+  <input id="basicR" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-Forests
-<input id="basicG" type="number" min="0" onchange="updateTable()">
+  <label for="basicG">Forests:</label>
+  <input id="basicG" type="number" class="form-control" min="0" onchange="updateTable()">
 </p>
 </div>
 </div>
@@ -126,24 +133,24 @@ Forests
 <div class="row">
 <div class="col-md-2">
 <p>
-<abbr title="Flooded Strand">WU Fetch</abbr>
-<input id="fetchWU" type="number" min="0" onchange="updateTable()">
+  <label for="fetchWU" title="Flooded Strand">WU Fetch:</label>
+  <input id="fetchWU" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-<abbr title="Polluted Delta">UB Fetch</abbr>
-<input id="fetchUB" type="number" min="0" onchange="updateTable()">
+  <label for="fetchUB" title="Polluted Delta">UB Fetch</label>
+  <input id="fetchUB" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-<abbr title="Smouldering Marsh">BR Fetch</abbr>
-<input id="fetchBR" type="number" min="0" onchange="updateTable()">
+  <label for="fetchBR" title="Smouldering Marsh">BR Fetch</label>
+  <input id="fetchBR" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-<abbr title="Wooded Foothills">BR Fetch</abbr>
-<input id="fetchRG" type="number" min="0" onchange="updateTable()">
+  <label for="fetchRG" title="Wooded Foothills">BG Fetch</label>
+  <input id="fetchRG" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-<abbr title="Windswept Heath">GW Fetch</abbr>
-<input id="fetchGW" type="number" min="0" onchange="updateTable()">
+  <label for="fetchGW" title="Windswept Heath">GW Fetch</label>
+  <input id="fetchGW" type="number" class="form-control" min="0" onchange="updateTable()">
 </p>
 </div>
 </div>
@@ -156,24 +163,24 @@ Forests
 <div class="row">
 <div class="col-md-2">
 <p>
-WB Fetch
-<input id="fetchWB" type="number" min="0" onchange="updateTable()">
+  <label for="fetchWB" title="Marsh Flats">WB Fetch:</label>
+  <input id="fetchWB" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-WR Fetch
-<input id="fetchWR" type="number" min="0" onchange="updateTable()">
+  <label for="fetchWR" title="Arid Mesa">WR Fetch</label>
+  <input id="fetchWR" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-UR Fetch
-<input id="fetchUR" type="number" min="0" onchange="updateTable()">
+  <label for="fetchUR" title="Scalding Tarn">UR Fetch</label>
+  <input id="fetchUR" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-UG Fetch
-<input id="fetchUG" type="number" min="0" onchange="updateTable()">
+  <label for="fetchUG" title="Misty Rainforest">UG Fetch</label>
+  <input id="fetchUG" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-BG Fetch
-<input id="fetchBG" type="number" min="0" onchange="updateTable()">
+  <label for="fetchBG" title="Verdant Catacombs">BG Fetch</label>
+  <input id="fetchBG" type="number" class="form-control" min="0" onchange="updateTable()">
 </p>
 </div>
 </div>
@@ -186,24 +193,24 @@ BG Fetch
 <div class="row">
 <div class="col-md-2">
 <p>
-WU Shock
-<input id="shockWU" type="number" min="0" onchange="updateTable()">
+  <label for="shockWU" title="Hallowed Fountain">WU Shock:</label>
+  <input id="shockWU" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-UB Shock
-<input id="shockUB" type="number" min="0" onchange="updateTable()">
+  <label for="shockUB" title="Watery Grave">UB Shock</label>
+  <input id="shockUB" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-BR Shock
-<input id="shockBR" type="number" min="0" onchange="updateTable()">
+  <label for="shockBR" title="Blood Crypt">BR Shock</label>
+  <input id="shockBR" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-RG Shock
-<input id="shockRG" type="number" min="0" onchange="updateTable()">
+  <label for="shockRG" title="Stomping Ground">RG Shock</label>
+  <input id="shockRG" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-GW Shock
-<input id="shockGW" type="number" min="0" onchange="updateTable()">
+  <label for="shockGW" title="Temple Garden">GW Shock</label>
+  <input id="shockGW" type="number" class="form-control" min="0" onchange="updateTable()">
 </p>
 </div>
 </div>
@@ -216,24 +223,24 @@ GW Shock
 <div class="row">
 <div class="col-md-2">
 <p>
-WB Shock
-<input id="shockWB" type="number" min="0" onchange="updateTable()">
+  <label for="shockWB" title="Godless Shrine">WB Shock:</label>
+  <input id="shockWB" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-WR Shock
-<input id="shockWR" type="number" min="0" onchange="updateTable()">
+  <label for="shockWR" title="Sacred Foundry">WR Shock</label>
+  <input id="shockWR" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-UR Shock
-<input id="shockUR" type="number" min="0" onchange="updateTable()">
+  <label for="shockUR" title="Steam Vents">UR Shock</label>
+  <input id="shockUR" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-UG Shock
-<input id="shockUG" type="number" min="0" onchange="updateTable()">
+  <label for="shockUG" title="Breeding Pool">UG Shock</label>
+  <input id="shockUG" type="number" class="form-control" min="0" onchange="updateTable()">
 </div>
 <div class="col-md-2">
-BG Shock
-<input id="shockBG" type="number" min="0" onchange="updateTable()">
+  <label for="shockBG" title="Overgrown Tomb">BG Shock</label>
+  <input id="shockBG" type="number" class="form-control" min="0" onchange="updateTable()">
 </p>
 </div>
 </div>
@@ -241,7 +248,6 @@ BG Shock
 
 
 <hr>
-
 <p>
 Work in progress.<br>
 Things to do: <br>
@@ -250,5 +256,7 @@ Things to do: <br>
 -provide suggestions based on your current base<br>
 -better organize lands
 </p>
+</div>
+
 </body>
 </html>

@@ -12,6 +12,10 @@ var EBTG;
 
 var total;
 
+function analyzeMana() {
+
+}
+
 function updateTable() {
     var EBUW = +basicW.value + +fetchGW.value + +fetchWU.value + +fetchWB.value + +fetchWR.value + +shockGW.value + +shockWU.value + +shockWB.value + +shockWR.value;
 	var EBUU = +basicU.value + +fetchWU.value + +fetchUB.value + +fetchUR.value + +fetchUG.value + +shockWU.value + +shockUB.value + +shockUR.value + +shockUG.value;
